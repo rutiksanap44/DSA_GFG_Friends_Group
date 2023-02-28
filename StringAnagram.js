@@ -1,4 +1,9 @@
 function anagram(s, t) {
+    // if length is not equal
+    if(s.length!=t.length){
+        return false;
+    }
+
     let arr1 = [];
     let arr2 = [];
     // storing the first string
@@ -20,5 +25,5 @@ function anagram(s, t) {
     }
     return flag;
 }
-console.log(anagram("rat", "car"));
+console.log(anagram("Hello", "Helolo"));
 // anagram("Hello", "Helol");
